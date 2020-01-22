@@ -1,7 +1,7 @@
 pipeline {
   agent any
   stages {
-    stage('error') {
+    stage('SET CI') {
       parallel {
         stage('npm install') {
           steps {
