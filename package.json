@@ -1,5 +1,5 @@
 {
-  "name": "tests",
+  "name": "lint_test",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -13,5 +13,17 @@
   "devDependencies": {
     "eslint": "^6.8.0",
     "eslint-config-peopledoc": "^1.7.2"
-  }
+  },
+  "description": "Hi, I'm just a test",
+  "main": "demo.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/st3v3lyrious/lint_ci_test.git"
+  },
+  "author": "Steve Al",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/st3v3lyrious/lint_ci_test/issues"
+  },
+  "homepage": "https://github.com/st3v3lyrious/lint_ci_test#readme"
 }
