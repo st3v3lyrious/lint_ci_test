@@ -1,10 +1,18 @@
 pipeline {
   agent any
   stages {
-    stage('') {
-      steps {
-        sh '''npm install --save-dev peopledoc/eslint-config-peopledoc
-npm run lint'''
+    stage('error') {
+      parallel {
+        stage('error') {
+          steps {
+            sh 'npm install'
+          }
+        }
+        stage('linting') {
+          steps {
+            sh 'npm run lint'
+          }
+        }
       }
     }
   }
