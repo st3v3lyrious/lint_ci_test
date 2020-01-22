@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('error') {
       parallel {
-        stage('error') {
+        stage('npm install') {
           steps {
             sh 'npm install'
           }
